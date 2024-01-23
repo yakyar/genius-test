@@ -36,6 +36,7 @@
           </h1>
         </div>
       </section>
+      <!-- <div class="test-box"></div> -->
       <section class="advantages-section">
         <div class="container">
           <h2 class="visualy-hidden">Наші переваги</h2>
@@ -66,19 +67,24 @@
             </div>
             <img
               src="./images/baker-man.jpg"
-              alt="Чоловик пекар дивиться на батони з посмішкою"
+              alt="Чоловік пекар дивиться на батони з посмішкою"
             />
           </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title">
+          <h2 class="chefs-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img
+                  class="cheaf-photo"
+                  src="./images/Nastya-chef.jpg"
+                  alt="Nastya-chef"
+                />
                 <h3 class="chef-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -87,6 +93,11 @@
             </li>
             <li>
               <article>
+                <img
+                  class="cheaf-photo"
+                  src="./images/Vlad-chef.jpg"
+                  alt="Vlad-chef"
+                />
                 <h3 class="chef-title">Влад</h3>
                 <p>Привіт, я Влад! Мій кондитерський стаж вже 18 років.</p>
                 <p>
@@ -101,7 +112,12 @@
       </section>
       <section class="section" id="format-section">
         <div class="container">
-          <h2 class="formats-title section-title">Формати</h2>
+          <h2 class="formats-title section-title centered">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" wigth="32" height="40">
+              <use href="./images/icons1.svg#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="format-list">
             <li class="formats-item">
               <article class="format-card">
@@ -140,6 +156,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" >
+              <use href="./images/icons1.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="contacts-title section" id="contact-section">
@@ -158,7 +179,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <!-- logo  -->
@@ -195,13 +216,16 @@
               </li>
               <li>
                 <a href="#">
-                  <!-- facebook icon -->
+                  <svg class="adress-icon" width="32" height="32">
+                    <use href="./images/icons1.svg#icon-facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <!-- instagram icon -->
-                </a>
+                 <svg class="adress-icon" width="32" height="32">
+                    <use href="./images/icons1.svg#icon-instagram"></use>
+                  </svg>
               </li>
             </ul>
             <a class="address-link" href="#" target="_blank"
