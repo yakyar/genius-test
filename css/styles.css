@@ -32,7 +32,9 @@
 }
 
 /* base */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
@@ -44,6 +46,7 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -52,6 +55,9 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+a {
+  display: inline-block;
 }
 address {
   font-style: normal;
@@ -126,7 +132,7 @@ ul {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url("../images/hero-section-backgraund.jpg");
+  background-image: url("../images/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -194,23 +200,40 @@ ul {
 .traditions-text.limited {
   max-width: 340px;
 }
+.traditions-photo {
+  border-radius: 200px 200px 4px 4px;
+}
 /* chefs sections */
 .chefs-title {
-  max-width: 540px;
+  position: relative;
   margin: 0 auto 80px;
 }
-/* .chefs-title::before {
-  display: block;
-  width: 352px;
-  border: 2px solid var(--color-brand-light);
-  content: "";
-} */
 .chefs-title::after,
 .chefs-title::before {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: "";
+}
+.chefs-title::before {
+  left: 0;
+}
+.chefs-title::after {
+  right: 0;
+}
+
+.chefs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
 }
 .cheaf-photo {
   border-radius: 4px 4px 4px 200px;
@@ -222,7 +245,18 @@ ul {
   font-size: 40px;
   font-weight: 600;
 }
+.chef-text p {
+  margin-bottom: 24px;
+}
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
 /* format section */
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 .format-list {
   display: flex;
   flex-wrap: wrap;
@@ -264,6 +298,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   fill: var(--color-primary-dark);
   background-color: transparent;
   border-radius: 50%;
@@ -278,10 +313,72 @@ ul {
 }
 
 /* contacts section */
+.contacts-section {
+  padding-bottom: 96px;
+}
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
 .contacts-title {
   margin-bottom: 16px;
 }
 /* Footer */
+.footer {
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+}
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+}
+.footer::before {
+  width: 180px;
+  height: 130px;
+  left: 0;
+  background-image: url("../images/decor-bread-small.png");
+}
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url("../images/decor-bread-large.png");
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+.addres-list,
+.addres-info {
+  flex-grow: 1;
+}
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
@@ -299,20 +396,38 @@ ul {
   stroke: blue;
 }
 .addres-copyright {
-  font-style: 14px;
+  font-size: 14px;
 }
 
-.footer {
-  background-color: var(--color-primary-dark);
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-/* .test-box {
-  width: 300px;
-  height: 400px;
-  border: 1px solid black;
-  margin: 20px auto;
-  background-image: radial-gradient(gold 50%, red, green, blue 75%, blue 100%);
-} */
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
