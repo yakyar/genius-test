@@ -503,3 +503,52 @@ ul {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+/* ОБРАЗЕЦ  disabled required :placeholder-shown 
+.button:disabled {
+  background-color: lightgray;
+  color: grey;
+  border-color: currentColor;
+}
+.form-input:disabled::placeholder {
+  color: lightgrey;
+}
+.form-input:disabled {
+  border-color: lightgrey;
+}
+
+.form-input:required {
+  border-color: red;
+}
+.form-input:placeholder-shown {
+  background-color: blue;
+}
+
+.form-input:not(:placeholder-shown) {
+  background-color: blue;
+}
+
+*/
+/*  Образец checkbox
+.checkbox {
+  position: relative;
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: green;
+}
+.checkbox-label {
+  padding: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-primary-dark);
+  background-repeat: 2px;
+  content: "";
+} */
