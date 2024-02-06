@@ -1,39 +1,35 @@
 @import "./utils/fonts";
-@import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/texts";
+@import "./utils/utils";
+@import "./utils/variables";
 
 @import "./base";
 
-@import "./utils/utils";
-
-@import "./components/_advantages-section";
 @import "./components/buttons";
-@import "./components/carousel";
-@import "./components/chefs-secttion";
-@import "./components/contacts-section";
-@import "./components/footer";
-@import "./components/form";
-@import "./components/format-section";
-@import "./components/header";
-@import "./components/hero-section";
+@import "./components/carousel-button";
+@import "./components/chef-card";
+@import "./components/format-card";
+@import "./components/input";
 @import "./components/links";
-@import "./components/modal";
-@import "./components/section-title";
-@import "./components/traditions-section";
 
-.section {
-  padding: 48px 0;
-}
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-}
+@import "./layout/_advantages-section";
+@import "./layout/chefs-secttion";
+@import "./layout/contact-section";
+@import "./layout/container";
+@import "./layout/footer";
+@import "./layout/form-terms";
+@import "./layout/formats-section";
+@import "./layout/header";
+@import "./layout/hero-section";
+@import "./layout/modal";
+@import "./layout/section";
+@import "./layout/traditions-section";
+/*
 // @import "./utils/mixins";
 // .circle {
 //   @include circle(100px, 100px, white);
 // }
-
 // .circle-big {
 //   @include circle(200px, 200px, green);
 // }
@@ -41,21 +37,13 @@
 //   @include circle(50px, 50px, red);
 // }
 /* Traditions section */
-
 /* chefs sections */
-
 /* format section */
-
 /* carousel */
-
 /* contacts section */
-
 /* Footer */
-
 /* Modal */
-
 /* form */
-
 /* ОБРАЗЕЦ  disabled required :placeholder-shown 
 .button:disabled {
   background-color: lightgray;
@@ -79,9 +67,7 @@
 .form-input:not(:placeholder-shown) {
   background-color: blue;
 }
-
-*/
-/*  Образец checkbox
+  Образец checkbox
 .checkbox {
   position: relative;
 }
