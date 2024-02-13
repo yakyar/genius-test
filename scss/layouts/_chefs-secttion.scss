@@ -22,11 +22,18 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px 30px;
+    gap: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 40px 30px;
+      flex-direction: row;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }

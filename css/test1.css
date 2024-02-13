@@ -34,11 +34,11 @@
   width: 100px;
   height: 100px;
   background-color: green;
-  /* animation: spin 7s infinite linear; */
-  /* animation-name: spin;
-  animation-duration: 2s;
+  animation: spin 7s infinite linear;
+  animation-name: spin;
+  animation-duration: 10s;
 
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite;
   animation-timing-function: linear; */
 }
 @keyframes spin {
@@ -52,7 +52,11 @@
   }
   50% {
     transform: rotate(35deg);
-    background-color: purple;
+    background-color: yellow;
+  }
+  70% {
+    transform: rotate(35deg);
+    background-color: green;
   }
   100% {
     transform: rotate(360deg);
