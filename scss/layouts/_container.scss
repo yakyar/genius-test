@@ -1,5 +1,17 @@
 .container {
   width: 100%;
-  max-width: 1288px;
-  margin: 0 80px;
+  max-width: 1440px;
+  margin: 0;
+
+  &__cs {
+    padding-left: 80px;
+    // max-width: 1256px;
+    // margin: 0 80px;
+  }
+
+  &__format {
+    //   max-width: 1240px;
+    //   margin: 0 60x;
+    padding-left: 60px;
+  }
 }

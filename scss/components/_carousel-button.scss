@@ -16,8 +16,8 @@
     fill: var(--color-primary-light);
     background-color: var(--color-primary-dark);
   }
-}
 
-.carousel-button.next {
-  transform: rotate(0.5turn);
+  &.next {
+    transform: rotate(0.5turn);
+  }
 }

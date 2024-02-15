@@ -7,9 +7,11 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
+    max-width: 1205px;
     align-items: flex-start;
+    margin: 0 80px;
   }
   &__content {
     max-width: 710px;
