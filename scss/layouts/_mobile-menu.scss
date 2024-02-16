@@ -16,5 +16,19 @@
     position: absolute;
     top: 16px;
     right: 24px;
+    background-color: transparent;
+    border-color: transparent;
   }
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+  // &__menu {
+  //   display: flex;
+  //   gap: 64px;
+  //   flex-grow: 1;
+  //   justify-content: center;
+  // }
 }
