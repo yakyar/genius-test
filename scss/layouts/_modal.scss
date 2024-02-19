@@ -50,13 +50,12 @@
 
   &::after {
     position: absolute;
-    width: 180px;
-    height: 240px;
     bottom: 0;
     right: 10px;
-    transform: rotate(-15.05deg);
-    // z-index: 1;
+    width: 180px;
+    height: 240px;
+    // transform: rotate(-15.05deg);
     content: "";
-    background-image: url("../images/decor-bread-shtamp.png");
+    background-image: url("../../images/decor-bread-shtamp.png");
   }
 }
