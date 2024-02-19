@@ -9,5 +9,5 @@ const disableScroll = () =>
 menuBtnOpen.addEventListener("click", toggleMenu);
 menuBtnClose.addEventListener("click", toggleMenu);
 
-menuBtnOpen.addEventListener("click", disableScroll);
+// menuBtnOpen.addEventListener("click", disableScroll);
 menuBtnClose.addEventListener("click", disableScroll);
