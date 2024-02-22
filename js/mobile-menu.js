@@ -9,5 +9,10 @@ const disableScroll = () =>
 menuBtnOpen.addEventListener("click", toggleMenu);
 menuBtnClose.addEventListener("click", toggleMenu);
 
-// menuBtnOpen.addEventListener("click", disableScroll);
+menuBtnOpen.addEventListener("click", disableScroll);
 menuBtnClose.addEventListener("click", disableScroll);
+document.querySelectorAll(".mobile-menu__link").forEach((a) => {
+  a.addEventListener("click", () => {
+    document.querySelector(".mobile-menu").className = "mobile-menu";
+  });
+});
