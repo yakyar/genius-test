@@ -1,0 +1,95 @@
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./utils/texts";
+@import "./utils/utils";
+@import "./utils/variables";
+
+@import "./base";
+
+@import "./components/buttons";
+@import "./components/carousel-button";
+@import "./components/chef-card";
+@import "./components/format-card";
+@import "./components/input";
+@import "./components/links";
+@import "./components/pagination";
+
+@import "./layouts/_advantages-section";
+@import "./layouts/chefs-section";
+@import "./layouts/contact-section";
+@import "./layouts/container";
+@import "./layouts/footer";
+@import "./layouts/form-terms";
+@import "./layouts/formats-section";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/mobile-menu";
+@import "./layouts/modal";
+@import "./layouts/section";
+@import "./layouts/traditions-section";
+/*
+// @import "./utils/mixins";
+// .circle {
+//   @include circle(100px, 100px, white);
+// }
+// .circle-big {
+//   @include circle(200px, 200px, green);
+// }
+// .circle-small {
+//   @include circle(50px, 50px, red);
+// }
+/* Traditions section */
+/* chefs sections */
+/* format section */
+/* carousel */
+/* contacts section */
+/* Footer */
+/* Modal */
+/* form */
+/* ОБРАЗЕЦ  disabled required :placeholder-shown 
+.button:disabled {
+  background-color: lightgray;
+  color: grey;
+  border-color: currentColor;
+}
+.form-input:disabled::placeholder {
+  color: lightgrey;
+}
+.form-input:disabled {
+  border-color: lightgrey;
+}
+
+.form-input:required {
+  border-color: red;
+}
+.form-input:placeholder-shown {
+  background-color: blue;
+}
+
+.form-input:not(:placeholder-shown) {
+  background-color: blue;
+}
+  Образец checkbox
+.checkbox {
+  position: relative;
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: green;
+}
+.checkbox-label {
+  padding: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-primary-dark);
+  background-repeat: 2px;
+  content: "";
+} */

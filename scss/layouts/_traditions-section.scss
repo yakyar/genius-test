@@ -1,0 +1,37 @@
+.traditions-section {
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1205px;
+    align-items: flex-start;
+    margin: 0 80px;
+  }
+  &__content {
+    max-width: 710px;
+  }
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  &__image {
+    display: none;
+    border-radius: 400px 400px 0px 0px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__text {
+    &--limited {
+      max-width: 340px;
+    }
+  }
+}

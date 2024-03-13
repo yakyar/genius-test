@@ -1,0 +1,14 @@
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  text-align: center;
+  /* font-family: Gilroy; */
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.46;
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}

@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  border: 1px dotted black;
+}
+.item {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item.red {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  transform: translateX(-20px);
+  transition: background-color 5s, color 2s, transform 3s;
+  /* transition-property: background-color;
+  transition-duration: 5s;
+  transition-delay: 3s; */
+}
+.item.red:hover {
+  transform: translateX(0);
+  background-color: green;
+  color: yellow;
+  cursor: pointer;
+}
+.item.green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: spin 7s infinite linear;
+  animation-name: spin;
+  animation-duration: 10s;
+
+  /* animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    background-color: red;
+  }
+  30% {
+    transform: rotate(15deg);
+    background-color: blue;
+  }
+  50% {
+    transform: rotate(35deg);
+    background-color: yellow;
+  }
+  70% {
+    transform: rotate(35deg);
+    background-color: green;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: brown;
+  }
+}
+.item.blue {
+  /* position: fixed; */
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  transform: scale(0.5);
+}
+.item.orange {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  transform: skew(20deg, 20deg);
+}
