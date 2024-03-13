@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input {
   position: relative;
 
@@ -31,3 +32,38 @@
     color: var(--color-primary-dark);
   }
 }
+=======
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    left: 42px;
+    top: 16px;
+  }
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 8px;
+    border: 1px solid var(--color-secondary-dark);
+    background-color: transparent;
+  }
+
+  &:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--color-secondary-dark);
+    font-size: 16px;
+    line-height: 1.17;
+  }
+  &:focus::placeholder {
+    color: var(--color-primary-dark);
+  }
+}
+>>>>>>> f063963e72cc067ba98155880cf45025fe2c1fc0

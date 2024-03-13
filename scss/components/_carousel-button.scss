@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carousel-button {
   width: 44px;
   height: 44px;
@@ -25,3 +26,31 @@
 .carousel-arrow {
   fill: var(--color-primary-dark);
 }
+=======
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    fill: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+  }
+
+  &.next {
+    transform: rotate(0.5turn);
+  }
+}
+.carousel-arrow {
+  fill: var(--color-primary-dark);
+}
+>>>>>>> f063963e72cc067ba98155880cf45025fe2c1fc0
